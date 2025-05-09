@@ -10,7 +10,7 @@ Helio Pet is a sleek, responsive product page for a futuristic pet therapy devic
 - LocalStorage cart persistence
 
 ### 🔗 Live Preview
-[View Live Project](https://yourusername.github.io/helio-pet/)
+[View Live Project](https://mim-rose.github.io/helio-pet/)
 
 ---
 
