@@ -1,0 +1,134 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helio Pet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Responsive Navbar -->
+  <header class="navbar">
+    <div class="logo">Helio Pet<sup>™</sup></div>
+
+    <nav class="nav-links">
+      <a href="#">Shop</a>
+      <a href="#">Our Story</a>
+      <a href="#">Science</a>
+      <a href="#">Results</a>
+    </nav>
+
+    <!-- Cart, Language, and Currency Toggles -->
+    <div class="navbar-icons">
+      <div class="cart-icon">
+        <span id="cart-count">0</span>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <span id="lang-toggle">ENG</span>
+      <span id="curr-toggle">USD</span>
+    </div>
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#">Shop</a>
+      <a href="#">Our Story</a>
+      <a href="#">Science</a>
+      <a href="#">Results</a>
+    </div>
+  </header>
+
+   <!-- Main Product Section -->
+  <main>
+    <section class="product">
+      <div class="product-images">
+  <img id="main-image" src="/images/h2.webp" alt="Helio Pet Device" />
+  <div class="thumbnails">
+    <img src="/images/h1.jpg" alt="Pet using Helio Device" class="thumbnail">
+    <img src="/images/h3.jpg" alt="Helio Device in action" class="thumbnail">
+    <img src="/images/h7.jpg" alt="Close-up of device" class="thumbnail">
+    <img src="/images/h8.jpeg" alt="Dog receiving therapy" class="thumbnail">
+  </div>
+</div>
+      <div class="product-info">
+        <h1>Helio Pet Device<sup>™</sup></h1>
+        
+        <div class="rating">4.8 ★ (600 reviews)</div>
+        <p class="description">“I’ve used this for THERAPAW™ I purchased this for my 12 year old Golden Retriever…”</p>
+        <div class="price">
+          <span id="selling-price">$249.00</span>
+          <span id="compare-price">$369.00</span>
+        </div>
+        <div class="quantity-selector">
+          <button id="decrease">&minus;</button>
+          <span id="quantity">1</span>
+          <button id="increase">+</button>
+        </div>
+        <button id="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+
+    <!-- Professional Grade Section -->
+    <section class="professional-grade">
+      <h2>Professional Grade, Patented Design.</h2>
+      <ul>
+        <li>340% bigger head → 5-minute treatments</li>
+        <li>3 Modes of Power → suitable for any area</li>
+        <li>800% More Power</li>
+      </ul>
+    </section>
+
+    <!-- Verified Reviews Section -->
+    <section class="reviews">
+      <h2>Verified Reviews</h2>
+      <div class="rating-summary">
+        <strong>4.8 ★</strong> based on 600 reviews
+        <!-- Add breakdown here -->
+      </div>
+      <div class="review">
+        <p><strong>Kristine K</strong> - Excellent product</p>
+        <p>It works for my senior husky and my 12 year old GSD at home.</p>
+        <!-- Add review images if needed -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Helio Pet. All rights reserved.</p>
+    <div class="socials">
+      <!-- Social media icons -->
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <aside id="cart-drawer" aria-label="Shopping Cart" role="region" aria-hidden="true">
+    <header id="cart-header">
+      <span>Your Cart</span>
+      <button id="cart-close-btn" aria-label="Close Cart">&times;</button>
+    </header>
+    <div id="cart-items">
+      <!-- Items will be injected here -->
+    </div>
+    <!-- Cart Footer -->
+<div id="cart-footer">
+  <div class="cart-total">
+    <span>Estimated Total:</span>
+    <strong id="estimated-total">$0.00</strong>
+  </div>
+  <button id="checkout-btn">Checkout</button>
+</div>
+
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
